@@ -8,19 +8,23 @@
     <title>Login</title>
 </head>
 <body>
-    <form id="loginform">
+    <main class="container">
+        
         <h1>Se connecter</h1>
-        <div>
-            <label for="email">Entrez votre adresse e-mail:</label>  
-            <input type="email" id="email" name="email" size="30" required />
-        </div>
-    
-        <div>
-            <label for="pass">Entrez votre mot de passe (8 caractères minimum):</label>
-            <input type="password" id="pass" name="password" minlength="8" required />
-        </div>
 
-        <input id="button" type="submit" value="Se connecter" />
-    </form>
+        <form id="loginform" class="form">
+            <div>
+                <label for="email">Entrez votre adresse e-mail:</label>  
+                <input type="email" id="email" name="email" size="30" required />
+            </div>
+        
+            <div>
+                <label for="pass">Entrez votre mot de passe (8 caractères minimum):</label>
+                <input type="password" id="pass" name="password" minlength="8" required />
+            </div>
+            <button id="button" type="submit" >Se connecter</button>
+        </form>
+
+    </main>
 </body>
 </html>
