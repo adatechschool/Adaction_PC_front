@@ -9,32 +9,33 @@
     <title>Administrateur-ice</title>
 </head>
 <body>
+    <main class="container">
     <h1>Bénévoles</h1>
-    <ul>
-    </ul>
+
+    <ul></ul>
 
     <button>Ajouter un.e bénévole</button>
 
-    <form id="add-volunteer">
+    <form id="add-volunteer" class="form">
         <h1>Ajouter un.e bénévole</h1>
             <div class="firstname">
-                <label for="firstname">Prénom</label>  
+                <label for="firstname">Prénom</label><br>  
                 <input type="text" id="firstname" name="firstname" required />
             </div>
             <div class="lastname">
-                <label for="lastname">Nom</label>  
+                <label for="lastname">Nom</label><br>  
                 <input type="text" id="lastname" name="lastname" required />
             </div>
             <div class="email">
-                <label for="email">E-mail</label>  
+                <label for="email">E-mail</label><br>  
                 <input type="email" id="email" name="email" required />
             </div>
             <div class="password">
-                <label for="password">Mot de passe</label>  
+                <label for="password">Mot de passe</label><br> 
                 <input type="password" id="password" name="password" required />
             </div>
             <div class="Is_admin">
-                <label for="Is_admin">Administrateur ?</label>  
+                <label for="Is_admin">Administrateur ?</label><br>  
                 <input type="text" id="Is_admin" name="Is_admin" required />
             </div>
             
@@ -56,6 +57,7 @@
            
             <input id="button" type="submit" value="Valider" />
     </form>
+    </main>
 
     
 </body>
