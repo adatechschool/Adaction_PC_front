@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="admin.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Administrateur-ice</title>
 </head>
 <body>
@@ -14,46 +15,49 @@
             Prenom Nom Ville
         </li>
     </ul>
-    
+
     <button>Ajouter un.e bénévole</button>
 
-    <form>
+    <form id="add-volunteer">
         <h1>Ajouter un.e bénévole</h1>
             <div class="firstname">
                 <label for="firstname">Prénom</label>  
-                <input type="text" id="firstname" required />
+                <input type="text" id="firstname" name="firstname" required />
             </div>
             <div class="lastname">
                 <label for="lastname">Nom</label>  
-                <input type="text" id="lastname" required />
+                <input type="text" id="lastname" name="lastname" required />
             </div>
             <div class="email">
                 <label for="email">E-mail</label>  
-                <input type="email" id="email" required />
+                <input type="email" id="email" name="email" required />
             </div>
             <div class="password">
                 <label for="password">Mot de passe</label>  
-                <input type="password" id="password" required />
+                <input type="password" id="password" name="password" required />
             </div>
             <div class="Is_admin">
                 <label for="Is_admin">Administrateur ?</label>  
-                <input type="text" id="Is_admin" required />
+                <input type="text" id="Is_admin" name="Is_admin" required />
             </div>
+            
             <div class="city">
                 <label for="city-select">Ville</label>  
-                <select name="cities" id="city-select">
+                <select name="city_id" id="city-select">
                     <option value="">--Choisissez une option--</option>
-                    <option value="Paris" id="1" >Paris</option>
-                    <option value="Marseille" id="2" >Marseille</option>
-                    <option value="Lyon" id="3" >Lyon</option>
-                    <option value="Toulouse" id="4" >Toulouse</option>
-                    <option value="Nice" id="5" >Nice</option>
-                    <option value="Nantes" id="6" >Nantes</option>
-                    <option value="Strasbourg" id="7" >Strasbourg</option>
-                    <option value="Montpellier" id="8" >Montpellier</option>
-                    <option value="Bordeaux" id="9" >Bordeaux</option>
-                    <option value="Lille" id="10" >Lille</option>
+                    <option value="1" id="1" >Paris</option>
+                    <option value="2" id="2" >Marseille</option>
+                    <option value="3" id="3" >Lyon</option>
+                    <option value="4" id="4" >Toulouse</option>
+                    <option value="5" id="5" >Nice</option>
+                    <option value="6" id="6" >Nantes</option>
+                    <option value="7" id="7" >Strasbourg</option>
+                    <option value="8" id="8" >Montpellier</option>
+                    <option value="9" id="9" >Bordeaux</option>
+                    <option value="10" id="10" >Lille</option>
             </div>
+           
+            <input id="button" type="submit" value="Valider" />
     </form>
 
     
