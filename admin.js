@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", async (e) => {
     e.preventDefault();
-    let request = `https://localhost:8000/volunteers/index`
+    let request = `http://localhost:8000/volunteers/index`
 
     try {
         let data = await fetch(request);
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", async (e) => {
                 if (window.confirm("Voulez-vous vraiment supprimer le/la bénévole ?")){
 
                     try{
-                        const response = await fetch(`https://localhost:8000/volunteer/${id}`, {
+                        const response = await fetch(`http://localhost:8000/volunteer/${id}`, {
                             method: 'DELETE'
                         });
                         const result = await response.json();
@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", async (e) => {
             alert("Bénévole ajouté avec succès !");
             // Redirection ou remise à zéro du formulaire
             e.target.reset();
+            location.reload();
         } else {
             alert(`Erreur : ${result.error || 'Vérifiez les champs du formulaire.'}`);
         }
