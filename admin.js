@@ -1,3 +1,17 @@
+const form = document.getElementById('add-volunteer');
+const button = document.getElementById('toggle-btn');
+
+button.addEventListener('click', () => {
+  if (form.style.display === 'none' || form.style.display === '') {
+    form.style.display = 'block';
+    button.textContent = "Cacher le formulaire";
+  } else {
+    form.style.display = 'none';
+    button.textContent = "Ajouter un.e bénévole";
+  }
+});
+
+
 document.addEventListener("DOMContentLoaded", async (e) => {
     e.preventDefault();
     let request = `http://localhost:8000/volunteers/index`
@@ -17,7 +31,7 @@ document.addEventListener("DOMContentLoaded", async (e) => {
         for (let i = 0; i < response.length; i ++){
             const list = document.querySelector('ul')
             const volunteer = document.createElement('li');
-            volunteer.textContent = `${response[i].firstname} ${response[i].lastname} ${response[i].name}` 
+            volunteer.textContent = `${response[i].firstname} ${response[i].lastname}, ${response[i].name} ` 
             
             const deleteButton = document.createElement('button');
             deleteButton.textContent = "Supprimer";

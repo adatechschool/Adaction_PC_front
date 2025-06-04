@@ -10,53 +10,61 @@
 </head>
 <body>
     <main class="container">
-    <h1>Bénévoles</h1>
+        <h1>Bénévoles</h1>
 
-    <ul></ul>
+        <ul></ul>
 
-    <button>Ajouter un.e bénévole</button>
+        <br>
 
-    <form id="add-volunteer" class="form">
-        <h1>Ajouter un.e bénévole</h1>
-            <div class="firstname">
-                <label for="firstname">Prénom</label><br>  
-                <input type="text" id="firstname" name="firstname" required />
-            </div>
-            <div class="lastname">
-                <label for="lastname">Nom</label><br>  
-                <input type="text" id="lastname" name="lastname" required />
-            </div>
-            <div class="email">
-                <label for="email">E-mail</label><br>  
-                <input type="email" id="email" name="email" required />
-            </div>
-            <div class="password">
-                <label for="password">Mot de passe</label><br> 
-                <input type="password" id="password" name="password" required />
-            </div>
-            <div class="Is_admin">
-                <label for="Is_admin">Administrateur ?</label><br>  
-                <input type="text" id="Is_admin" name="Is_admin" required />
-            </div>
-            
-            <div class="city">
-                <label for="city-select">Ville</label>  
-                <select name="city_id" id="city-select">
-                    <option value="">--Choisissez une option--</option>
-                    <option value="1" id="1" >Paris</option>
-                    <option value="2" id="2" >Marseille</option>
-                    <option value="3" id="3" >Lyon</option>
-                    <option value="4" id="4" >Toulouse</option>
-                    <option value="5" id="5" >Nice</option>
-                    <option value="6" id="6" >Nantes</option>
-                    <option value="7" id="7" >Strasbourg</option>
-                    <option value="8" id="8" >Montpellier</option>
-                    <option value="9" id="9" >Bordeaux</option>
-                    <option value="10" id="10" >Lille</option>
-            </div>
-           
-            <input id="button" type="submit" value="Valider" />
-    </form>
+        <button id="toggle-btn">Ajouter un.e bénévole</button>
+
+
+        <form id="add-volunteer" class="form" style="display: none;">
+            <h1>Ajouter un.e bénévole</h1>
+                <div class="firstname">
+                    <label for="firstname">Prénom</label><br>  
+                    <input type="text" id="firstname" name="firstname" required />
+                </div><br>
+                <div class="lastname">
+                    <label for="lastname">Nom</label><br>  
+                    <input type="text" id="lastname" name="lastname" required />
+                </div><br>
+                <div class="email">
+                    <label for="email">E-mail</label><br>  
+                    <input type="email" id="email" name="email" required />
+                </div><br>
+                <div class="password">
+                    <label for="password">Mot de passe</label><br> 
+                    <input type="password" id="password" name="password" required />
+                </div><br>
+                <div class="Is_admin">
+                    <label for="Is_admin">Administrateur</label><br>  
+                
+                    <label for="Is_admin"><input type="radio" id="yes" name="Is_admin" value="1"/>Oui</label>
+                    
+
+                    <label for="Is_admin"><input type="radio" id="no" name="Is_admin" value="0"  checked />Non</label>
+                </div><br>
+                
+                <div class="city">
+                    <label for="city-select">Ville</label><br>  
+                    <select name="city_id" id="city-select">
+                        <option value="">--Choisissez une option--</option>
+                        <option value="1" id="1" >Paris</option>
+                        <option value="2" id="2" >Marseille</option>
+                        <option value="3" id="3" >Lyon</option>
+                        <option value="4" id="4" >Toulouse</option>
+                        <option value="5" id="5" >Nice</option>
+                        <option value="6" id="6" >Nantes</option>
+                        <option value="7" id="7" >Strasbourg</option>
+                        <option value="8" id="8" >Montpellier</option>
+                        <option value="9" id="9" >Bordeaux</option>
+                        <option value="10" id="10" >Lille</option>
+                </div><br>
+                <div>
+                <input id="button" type="submit" value="Valider" />
+                </div>
+        </form>
     </main>
 
     

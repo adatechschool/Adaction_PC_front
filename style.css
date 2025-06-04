@@ -43,11 +43,11 @@ body {
 }
 
 /* Champs */
-.form label {
+.form label, select {
   font-weight: bold;
 }
 
-.form input {
+.form input, select {
   padding: 0.8rem;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -61,7 +61,7 @@ body {
 }
 
 /* Bouton */
-.form button {
+.form button, #button {
   padding: 0.8rem;
   background-color: #21653b;
   color: white;
@@ -82,4 +82,5 @@ body {
     margin-top: 10vh;
   }
 }
+
 
