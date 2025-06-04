@@ -39,13 +39,16 @@
                     <input type="password" id="password" name="password" required />
                 </div><br>
                 <div class="Is_admin">
-                    <label for="Is_admin">Administrateur</label><br>  
-                
-                    <label for="Is_admin"><input type="radio" id="yes" name="Is_admin" value="1"/>Oui</label>
-                    
+                    <label for="Is_admin">Administrateur</label>  
+                    <div class="container-radio">
+                        <label for="Is_admin">Oui<input type="radio" id="yes" name="Is_admin" value="1"/></label>
+                        
+                        
 
-                    <label for="Is_admin"><input type="radio" id="no" name="Is_admin" value="0"  checked />Non</label>
-                </div><br>
+                        <label for="Is_admin">Non<input type="radio" id="no" name="Is_admin" value="0"  checked /></label>
+                        
+                    </div>
+                    </div><br>
                 
                 <div class="city">
                     <label for="city-select">Ville</label><br>  
@@ -61,10 +64,11 @@
                         <option value="8" id="8" >Montpellier</option>
                         <option value="9" id="9" >Bordeaux</option>
                         <option value="10" id="10" >Lille</option>
+                    </select>    
                 </div><br>
-                <div>
-                <input id="button" type="submit" value="Valider" />
-                </div>
+                
+                <button id="button" type="submit" >Valider</button>                   
+
         </form>
     </main>
 

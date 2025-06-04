@@ -3,7 +3,7 @@ const button = document.getElementById('toggle-btn');
 
 button.addEventListener('click', () => {
   if (form.style.display === 'none' || form.style.display === '') {
-    form.style.display = 'block';
+    form.style.display = 'flex';
     button.textContent = "Cacher le formulaire";
   } else {
     form.style.display = 'none';
