@@ -52,12 +52,18 @@ body {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+  width: 100%;
+}
+
+.password-rule {
+  font-style: italic;
+  font-size: 0.8rem;
 }
 
 /* Bouton */
 .form button {
   padding: 0.8rem;
-  background-color: #007bff;
+  background-color: #21653b;
   color: white;
   font-size: 1rem;
   border: none;
@@ -67,7 +73,7 @@ body {
 }
 
 .form button:hover {
-  background-color: #0056b3;
+  background-color: #27844b;
 }
 
 /* Petit bonus : responsive desktop */
